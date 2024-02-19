@@ -464,6 +464,6 @@ os_sprintf(HTTPBUFF,"<div><style>.i1{font-size:1.3em;text-align:center;}.bt{heig
 os_sprintf(HTTPBUFF+os_strlen(HTTPBUFF),"<td><input class='i1' size='1' name='cfg4' value='%s'>°C</td></tr><input type='hidden' name='cfg5' value='%d'><input type='hidden' name='cfg6' value='%02d'><input type='hidden' name='cfg7' value='%02d'><input type='hidden' name='st' value='3'><tr><td>&nbsp;<button  class='bt' onclick='tmp(cfg3);tmp(cfg4);md(cfg5,0)'>Отключить<br>насос</button></td><td>&nbsp;<button  class='bt' onclick='tmp(cfg3);tmp(cfg4);md(cfg5,1)'>Режим&nbsp;по времени</button></td><td>&nbsp;<button  class='bt' onclick='tmp(cfg3);tmp(cfg4);md(cfg5,2)'>Режим<br>постоянно</button></td><td>&nbsp;<button class='bt' onclick='tmp(cfg3);tmp(cfg4)'>Установить<br>значения</button></td></tr></form></table><script>function sts() {document.getElementById('sts').style.display = 'block';}function stg(){document.getElementById('sts').style.display = 'none';}function dataSelect(f){if(f.v0){v = f.v0.value;(document.createElement('img')).src=(location.href+'valdes?int=1&set='+v);};if(f.th && f.tm){h = f.th.value;m = f.tm.value;(document.createElement('img')).src=(location.href+'valdes?int=2&set='+h);(document.createElement('img')).src=(location.href+'valdes?int=3&set='+m);stg()}};function tmp(x){x.value = x.value*10};function md(x,y){x.value=y};</script></div>",fltostr(temp_n),trejim,wremya_s_on,wremya_s_off);
 }
 
-
+//  Количество настроек
 //  время день. ,время ночь ,темп.день. ,темп.ночь ,режим ,сауна начало ,сауна конец
-// 3 valdes
+//  Глобальные переменные 3
